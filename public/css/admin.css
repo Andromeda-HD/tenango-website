@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+
+body.login-body {
+    margin: 0;
+    background: #fcfce3;
+    font-family: Manrope, sans-serif;
+}
+
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+.login-left {
+    width: 50%;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 400px;
+    padding: 40px;
+    background: #0A400C;
+    border-radius: 10px;
+    color: white;
+    font-family: Manrope, sans-serif;
+}
+
+.login-card h2 {
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: WindSong, cursive;
+    font-size: 44px;
+}
+
+/* Biarkan label kiri saja */
+.login-card label {
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+/* Input benar-benar center */
+.login-card input {
+    width: 93%;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: Manrope, sans-serif;
+}
+
+/* Tombol selalu center dan proporsional */
+.login-card button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 26px;
+    border: none;
+    border-radius: 6px;
+    background: #ffd449;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Manrope, sans-serif;
+}
+
+
+.error-box {
+    background: #ffdddd;
+    color: #900;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    font-family: Manrope, sans-serif;
+}
+
+/* ADMIN AREA */
+.admin-body {
+    margin: 0;
+    background: #fcfce3;
+    font-family: Manrope, sans-serif;
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #1C352D;
+    color: white;
+    padding: 24px 16px;
+    position: fixed;
+}
+
+.sidebar .brand {
+    margin-bottom: 30px;
+    font-family: WindSong, cursive;
+    font-size: 38px;
+}
+
+.sidebar a {
+    display: block;
+    margin-bottom: 14px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.05);
+    font-family: Manrope, sans-serif;
+}
+
+.sidebar a:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+.content-area {
+    margin-left: 220px;
+    padding: 32px;
+    width: calc(100% - 220px);
+    font-family: Manrope, sans-serif;
+}
+
+
+/* Container */
+.admin-container {
+width: 90%;
+margin: 20px auto;
+padding: 20px;
+font-family: Manrope, sans-serif;
+}
+
+/* Judul */
+.admin-container h2 {
+font-size: 22px;
+margin-bottom: 20px;
+color: #0A400C;
+font-weight: 700;
+}
+
+/* Header untuk tombol tambah */
+.admin-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 22px;
+}
+
+/* Tombol utama */
+.btn-para,
+.btn-add {
+padding: 10px 14px;
+background: #ffd449;
+color: black;
+font-weight: 700;
+border-radius: 6px;
+text-decoration: none;
+font-size: 14px;
+border: none;
+cursor: pointer;
+}
+
+.btn-para:hover,
+.btn-add:hover {
+background: #ffcc33;
+}
+
+/* Tabel admin global */
+.admin-table,
+.table-admin {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+background: white;
+}
+
+.admin-table th,
+.table-admin th {
+padding: 12px;
+background: #0A400C;
+color: white;
+font-size: 14px;
+text-align: left;
+}
+
+.admin-table td,
+.table-admin td {
+padding: 12px;
+border-bottom: 1px solid #ddd;
+font-size: 14px;
+}
+
+/* Gambar thumbnail konsisten */
+.table-img,
+.thumb {
+width: 90px;
+height: 70px;
+object-fit: cover;
+border-radius: 6px;
+}
+
+/* Tombol edit */
+.btn-edit {
+padding: 6px 10px;
+background: #2196f3;
+color: white;
+text-decoration: none;
+border-radius: 4px;
+}
+
+/* Tombol hapus */
+.btn-delete,
+.btn-del {
+padding: 6px 10px;
+background: #f44336;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-weight: 700;
+}
+
+.btn-delete:hover,
+.btn-del:hover {
+background: #d1352a;
+}
+
+/* Form inline */
+.inline-form,
+.inline {
+display: inline-block;
+}
+
+/* Form admin */
+.admin-form label,
+label {
+display: block;
+margin-top: 14px;
+margin-bottom: 6px;
+font-size: 14px;
+font-weight: 600;
+color: #1C352D;
+}
+
+.admin-form input[type="text"],
+.admin-form textarea,
+.admin-form input[type="file"],
+input,
+select,
+textarea {
+width: 100%;
+padding: 10px 12px;
+border: 1px solid #ccc;
+border-radius: 6px;
+margin-bottom: 16px;
+font-family: Manrope, sans-serif;
+}
+
+/* Submit */
+.btn-submit {
+margin-top: 16px;
+padding: 10px 14px;
+background: #ffd449;
+color: black;
+font-weight: 700;
+border-radius: 6px;
+border: none;
+cursor: pointer;
+}
+
+.btn-submit:hover {
+background: #ffcc33;
+}
+
+/* Preview gambar */
+.preview-img {
+width: 150px;
+border-radius: 6px;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+
+.admin-wrapper {
+  padding: 30px;
+}
+
+.admin-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.admin-table thead {
+  background: #1C352D;
+  color: white;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 14px 16px;
+  font-size: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-table tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.admin-table tbody tr:hover {
+  background: #eef4ef;
+}
+
+.table-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+}
+
+.btn-edit {
+  background: #0A400C;
+  color: white;
+}
+
+.btn-edit:hover {
+  background: #07680e;
+}
+
+.btn-delete {
+  background: #b30000;
+  color: white;
+}
+
+.btn-delete:hover {
+  background: #cc0000;
+}
+
+.page-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input:focus, textarea:focus {
+  border-color: #4a8f4b;
+  outline: none;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+.btn-primary {
+  background: #4a8f4b;
+  color: #fff;
+  padding: 10px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #3a713b;
+}
